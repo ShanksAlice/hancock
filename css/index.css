@@ -1,0 +1,150 @@
+*{
+    margin: 0;padding: 0;
+    font-family:'微软雅黑',Arial;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    height:100%;
+    width:90%;
+    margin:0 auto;
+}
+
+/*这是头部的样式*/
+.container .wrap{
+    margin:0 auto;
+    height:700px;
+    background: url("../images/BJ.png") no-repeat;
+}
+.container .wrap .font{
+    color: #fff;
+    line-height: 50px;
+    font-size: 36px;
+    margin-top:240px;
+    text-align: center;
+}
+.container .wrap .font p:first-child{
+    color: #2bade5;
+    font-weight: bold;
+}
+.container .head{
+    width: 100%;
+    height: 90px;
+    background:rgba(0,0,0,0.5);
+}
+.head .head_left{
+    float: left;
+}
+.head .head_left img{
+    margin:24px 0 0 70px;
+}
+.head .head_right{
+    float: right;
+}
+.head .head_right ul{
+    float: left;
+    height: 90px;
+    line-height: 90px;
+}
+.head .head_right .btn{
+    float: left;
+    line-height: 90px;
+    margin:0 60px 0 30px;
+}
+.head .head_right .btn button{
+    margin-right: 20px;
+    width: 45px;
+    height: 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 12px;
+}
+.head .head_right .btn button a{
+    color: #fff;
+}
+.head .head_right .btn button:hover{
+    background: #2bade5;
+}
+
+.head .head_right ul li{
+    float: left;
+    margin-left: 30px;
+    cursor: pointer;
+    height: 88px;
+    font-size: 14px;
+}
+.head .head_right ul li a{
+    color: #fff;
+}
+.head .head_right ul li:hover{
+    border-bottom: 2px solid #2bade5;
+}
+.head .head_right ul li:hover a{
+    color: #2bade5;
+}
+
+
+/*这是plat部分*/
+.container .plat{
+    background:#f5f5f5;
+    width: 100%;
+    height: 200px;
+}
+.container .plat p:first-child{
+    font-size: 30px;
+    text-align: center;
+    line-height:100px;
+}
+.container .plat p:nth-child(2){
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+
+/*这部分是content样式*/
+.container .content{
+    width: 1100px;
+    height: 100%;
+    margin:0 auto;
+}
+.content .header p{
+    text-align: center;
+    line-height: 30px;
+}
+.content .header p:first-child{
+    font-size: 20px;
+    padding-top: 30px;
+}
+.content .header p:nth-child(2){
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.content .ull li{
+    width: 200px;
+    float: left;
+    text-align: center;
+    background: #f5f5f5;
+    height: 300px;
+    padding: 24px;
+    font-size: 12px;
+}
+.content .ull li~li{
+    margin-left: 36px;
+}
+.content .ull li img{
+    padding: 20px;
+}
+.content .ull li p:nth-of-type(1){
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+

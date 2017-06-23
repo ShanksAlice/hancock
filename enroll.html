@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="js/bootstrap.min.css">
+	<script src="jquery/jquery.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>注册</h1>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<form action="" method="post">
+					<label for="username">手机号</label>
+					<input type="text" class="form-control" id="username" name="username">
+					<label for="password">密码</label>
+					<input type="password" class="form-control" id="password" name="password">
+					<h1></h1>
+					<button class="btn btn-info btn-block">
+						注册
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+<script>
+$(function(){
+	var user=$("#username").val();
+	var pass=$("#password").val();
+
+	$.ajax({
+		   type:"post",
+		   url:"",
+		   data:
+		   {
+			   "customerIdentities": [
+				   {
+					   "identityType": "wechat",
+					   "identityValue": "o_dCRt4K-Tzp6oAZL2bFEhqB7rYA",
+					   "identityName": "nickname"
+				   }
+			   ],
+			   "customer": {
+				   "email": "string",
+				   "name": "string",
+				   "gender": "string",
+				   "mobile": "string",
+				   "source": "string"
+			   }
+		   },
+
+		   success: function(data){
+			    console.log(data);
+		   }
+	})
+})
+
+</script>
+
+<script src="//cbe.convertwork.cn/cbe/collect?tid=1238467299&at=0&h=web"></script>
+<script>
+	clab_tracker.ready(function(){
+		this.push({});
+		this.track("_1497408436137","加关注","scan");
+	});
+</script>
+
+
+
+</html>
