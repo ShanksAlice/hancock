@@ -47,14 +47,14 @@ $(function(){
 				   "mobile": "string",
 				   "source": "string"
 			   }
-		   }
-
+		   };
+	var str=JSON.stringfy(datas);	   
 
 	$.ajax({
 		   type:"post",
 		   url:"http://10.118.118.75:8080/AutoCustomer/demo/pushData.htm",
-		   dataType:'application/json',
-		   data:datas,
+		   dataType:'json',
+		   data:{json:escape(str)},
 		   success: function(data){
 			    console.log(data);
 		   }
