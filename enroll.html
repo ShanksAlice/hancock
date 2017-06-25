@@ -32,13 +32,7 @@
 $(function(){
 	var user=$("#username").val();
 	var pass=$("#password").val();
-
-	$.ajax({
-		   type:"post",
-		   url:"http://10.118.118.75:8080/AutoCustomer/demo/pushData.htm",
-		   dataType:'json',
-		   data:
-		   "{
+	var datas={
 			   "customerIdentities": [
 				   {
 					   "identityType": "wechat",
@@ -53,8 +47,14 @@ $(function(){
 				   "mobile": "string",
 				   "source": "string"
 			   }
-		   }",
+		   }
 
+
+	$.ajax({
+		   type:"post",
+		   url:"http://10.118.118.75:8080/AutoCustomer/demo/pushData.htm",
+		   dataType:'application/json',
+		   data:datas,
 		   success: function(data){
 			    console.log(data);
 		   }
