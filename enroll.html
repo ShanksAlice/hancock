@@ -48,13 +48,13 @@ $(function(){
 				   "source": "string"
 			   }
 		   };
-	var str=JSON.stringify(datas);	   
+	var str=JSON.parse(datas);	   
 
 	$.ajax({
 		   type:"post",
 		   url:"http://10.118.118.75:8080/AutoCustomer/demo/pushData.htm",
 		   dataType:'json',
-		   data:{json:escape(str)},
+		   data:str,
 		   success: function(data){
 			    console.log(data);
 		   }
